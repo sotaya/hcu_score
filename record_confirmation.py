@@ -12,9 +12,8 @@ from openpyxl.styles import Alignment
 class web:
     def initial(self):
         options=webdriver.ChromeOptions()
-        #options.add_argument('--headless')
-        #,options=options
-        self.driver=webdriver.Chrome('./chromedriver.exe')
+        options.add_argument('--headless')
+        self.driver=webdriver.Chrome('./chromedriver.exe',options=options)
         self.driver.get('https://ichipol.hiroshima-cu.ac.jp/uniprove_pt/UnLoginAction')
     def transition(self):
         self.driver.find_element(By.XPATH,'//div[@id="contents"]/div[1]/div[1]/ul/li[1]/input[2]').click()
