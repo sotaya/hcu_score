@@ -1,3 +1,3 @@
 # hcu_score
-大学の成績をExcelにまとめるプログラム
-※スクレイピング元が現在は存在しないサイトです
+Program to compile college grades into Excel
+※The scraping source is a site that no longer exists.
